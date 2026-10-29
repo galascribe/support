@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Account, billing or a private matter
-    url: mailto:support@galascribe.com
-    about: Email us for anything about your account, payments or personal data. Never post these in a public issue.
+    url: https://github.com/galascribe/support/blob/main/SUPPORT.md#private-matters
+    about: Email support@galascribe.com for anything about your account, payments or personal data. Never post these in a public issue.
   - name: Report a security vulnerability
     url: https://github.com/galascribe/support/blob/main/SECURITY.md
     about: Please report security issues privately, not as a public issue.
