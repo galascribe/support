@@ -1,0 +1,57 @@
+name: Something isn't working
+description: Report a problem with the Galascribe App, your published site or an email from us.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. **This issue is public.** Don't include passwords, tokens, payment details or private email addresses. For a private matter, email [support@galascribe.com](mailto:support@galascribe.com).
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it happen?
+      options:
+        - The Galascribe App (app.galascribe.com)
+        - My published site
+        - Signing in with GitHub
+        - An email or newsletter from Galascribe
+        - Somewhere else
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: Page or site address
+      description: The address in your browser when it happened, if you have it.
+      placeholder: https://app.galascribe.com/...
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+      placeholder: |
+        1. I clicked ...
+        2. I expected ...
+        3. Instead ...
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or error messages
+      description: Paste any error text, or drag in a screenshot. Cover any private details first.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Chrome on Windows 11, Safari on iPhone 15, ...
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched existing issues and this hasn't been reported.
+          required: true
+        - label: I've removed passwords, tokens, payment details and private email addresses.
+          required: true
